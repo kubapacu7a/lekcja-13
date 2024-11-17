@@ -1,55 +1,130 @@
 <!DOCTYPE html>
-<html lang="pl">
-<head>
-    <title>lekcja 13</title>
-    <meta charset="UTF-8" />
-    <meta name="author" content="Jakub Pacuła" />
-    <meta name="robots" content="all" />
+<html data-lt-installed="true"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+ <head>
+  <style>
+   body{
+}
+h1{
+	text-align:center;
+	padding:5px;
+	margin-top:10px;
+}
+.nie{
+	background-color: #ffc0cb;
+}
+th{
+	width:50px;
+	height:40px;
+}
+td{
+	width:60px;
+	height:40px;
+	text-align:center;
+}
+table{
+	margin:auto;
+}
+.ini{
+	background-color: rgb(100,100,100);
+}
+.bc{
+	background-color:rgba(0,99,255, 0.2);
+}
+.jo{
+	background-color:rgba(255,99,0, 0.5);
+}
+.pq{
+	background-color:rgb(99,255,0);
+}
+  </style>
+ </head>
+  <body>
+    <h1>Tabela bez scalania</h1>
+    <table border="1">
+      <!-- 1 -->
+      <tbody><tr class="nie">
+        <th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th>
+      </tr>
+      <!-- 2 -->
+       <tr>
+        <th class="nie">2</th><td>a</td><td class="bc">b</td><td class="bc">c</td><td>d</td><td>e</td>
+       </tr>
+      <!-- 3 -->
+       <tr>
+        <th class="nie">3</th><td>f</td><td>g</td><td>h</td><td>i</td><td class="jo">j</td>
+       </tr>
+      <!-- 4 -->
+       <tr>
+        <th class="nie">4</th><td>k</td><td>l</td><td>m</td><td>n</td><td class="jo">o</td>
+       </tr>
+      <!-- 5 -->
+       <tr>
+        <th class="nie">5</th><td class="pq">p</td><td class="pq">q</td><td class="pq">r</td><td>s</td><td>t</td>
+       </tr>
+      <!-- 6 -->
+       <tr>
+        <th class="nie">6</th><td class="pq">u</td><td class="pq">v</td><td class="pq">w</td><td>y</td><td>z</td>
+       </tr> 
+    </tbody></table>
 
-    <style>
-        table, th, td {
-            border: 1px solid black;
-            border-collapse: collapse;
-            width: 400px;
-            height: 25px;
-        }
-        th {
-            background-color: #fc0000;
-            width: 30px;
-            height: 30px;
-        }
-        td {
-            width: 50px;
-            height: 40px;
-        }
-        .bg-green-medium {
-            background-color: #7b00ff;
-        }
-    </style>
-</head>
-<body>
-    <center>
-    <h1>Tabela 1</h1>
-    <table style="text-align: center;">
-        <tr>
-            <th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th>
-        </tr>
-        <tr>
-            <th>2</th><td>a</td><td bgcolor="D1EFC8">b</td><td bgcolor="D1EFC8">c</td><td>d</td><td>e</td>
-        </tr>
-        <tr>
-            <th>3</th><td>f</td><td>g</td><td>h</td><td>i</td><td bgcolor="C1DBB9" colspan="2" rowspan="3">j, k, l, m, n, o, p</td>
-        </tr>
-        <tr>
-            <th>4</th><td>k</td><td>l</td><td>m</td><td>n</td>
-        </tr>
-        <tr>
-            <th>5</th><td>p</td><td>q</td><td>r</td><td>s</td>
-        </tr>
-        <tr>
-            <th>6</th><td bgcolor="A6BF9F">u</td><td bgcolor="A6BF9F">v</td><td bgcolor="A6BF9F">w</td><td>y</td><td>z</td>
-        </tr>
-    </table>
-</center>
-</body>
-</html>
+     <h1>Tabela ze scalaniem</h1>
+    <table border="1">
+      <!-- 1 -->
+      <tbody><tr class="nie">
+        <th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th>
+      </tr>
+      <!-- 2 -->
+       <tr>
+        <th class="nie">2</th><td>a</td><td class="bc" colspan="2">b, c</td><td>d</td><td>e</td>
+       </tr>
+      <!-- 3 -->
+       <tr>
+        <th class="nie">3</th><td>f</td><td>g</td><td>h</td><td>i</td><td class="jo" rowspan="2">j, o</td>
+       </tr>
+      <!-- 4 -->
+       <tr>
+        <th class="nie">4</th><td>k</td><td>l</td><td>m</td><td>n</td>
+       </tr>
+      <!-- 5 -->
+       <tr>
+        <th class="nie">5</th><td class="pq" colspan="3" rowspan="2">p, q, r, u, v, w</td><td>s</td><td>t</td>
+       </tr>
+      <!-- 6 -->
+       <tr>
+        <th class="nie">6</th><td>y</td><td>z</td>
+       </tr>
+    </tbody></table>
+
+    <h1>Inicjały KP</h1>
+    <table border="1">
+      <!-- 1 -->
+      <tbody><tr class="nie">
+        <th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th>
+      </tr>
+      <!-- 2 -->
+       <tr>
+        <th class="nie">2</th><td>a</td><td>b</td><td>c</td><td>d</td><td>e</td>
+       </tr>
+      <!-- 3 -->
+       <tr>
+        <th class="nie">3</th><td>f</td><td>g</td><td>h</td><td>i</td><td>j</td>
+       </tr>
+      <!-- 4 -->
+       <tr>
+        <th class="nie">4</th><td class="ini" rowspan="2">K P</td><td>l</td><td>m</td><td>n</td><td>o</td>
+       </tr>
+      <!-- 5 -->
+       <tr>
+        <th class="nie">5</th><td>q</td><td>r</td><td>s</td><td>t</td>
+       </tr>
+      <!-- 6 -->
+       <tr>
+        <th class="nie">6</th><td>u</td><td>v</td><td>w</td><td>y</td><td>z</td>
+       </tr>
+    </tbody></table>
+  
+      <br>
+      <p><a href="https://car0tek.github.io/zadania/">Strona główna</a></p>
+  
+ 
+</body></html>
